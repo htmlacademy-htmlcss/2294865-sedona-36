@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Каталог</title>
   </head>
   <body>
     <header  class = " page-header">
@@ -15,10 +15,10 @@
         <a class = "navigation-list-link" href = "index.html" > Главная </a>
             </li>
              <li class = "navigation-list-item">
-        <a class = "navigation-list-link" href = "about.html" > О седоне </a>
+        <a class = "navigation-list-link" href = "#" > О седоне </a>
             </li>
             <li class = "navigation-list-item">
-          <a class = "navigation-list-link" href = "catalog.html" > Гостиницы </a>
+          <a class = "navigation-list-link navigation-list-link-current" href = "catalog.html" > Гостиницы </a>
             </li>
             </ul>
           </nav>
@@ -42,8 +42,68 @@
              </ul>
            </nav>
         </header>
-<main class ="catalog-main">
 
+<main class ="inner-main">
+  <header class="inner-header">
+    <h1 class = "inner-header">Гостиницы Седоны</h1>
+     <ol class="breadcrumbs">
+       <li class="breadcrumbs-list">
+        <a class="breadcrumbs-mimic-button" href="index.html">
+          <span class="visually-hidden">Переход на главную страницу</span>
+        </a>
+       </li>
+       <li class="breadcrumbs-list">
+        <a class="breadcrumbs-mimic-button" href="#"> Гостиниц </a>
+       </li>
+     </ol>
+  </header>
+
+<section class="hotel-types-catalog">
+  <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class = "mailing-list-subscribe-catalog">
+    <h2 class = "visually-hidden">Подписка на рассылку</h2>
+     <ul class = "mailing-list-subscribe-list">
+         <li class = "mailing-list-subscribe-item">
+          <h3 class = "mailing-list-subscribe-title">Подпишитесь на рассылку</h3>
+            <p class = "mailing-list-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <form class = "mailing-list-subscribe-form" action="https://echo.htmlacademy.ru/" method = "post">
+                <label for ="mailing-list-email">Email</label>
+                 <input class ="field" placeholder = "email@example.com" type="email" name="mailing-list-email" id="mailing-list-email" required>
+                 <button class = "mailing-list-button" type = "submit" > Подписаться </button>
+              </form>
+         </li>
+     </ul>
+ </section>
 </main>
 
 <footer class = "page-footer" >
