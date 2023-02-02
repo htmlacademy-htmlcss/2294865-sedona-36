@@ -16,4 +16,134 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #242424;
+  background-color: #fbf7f4;
+}
+
+/*Pages*/
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-list-link {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color:#000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform:capitalize;
+}
+
+.navigation-list-link-mimic-button {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color:#756157;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.hero {
+  background-image: url("../images/index-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+}
+
+/*List*/
+ .lead {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead-description {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.list-blue-background {
+  color:#ffffff;
+  background-color: #82B3D3;
+}
+
+.services {
+  text-align: center;
+}
+
+.services-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+
+.hotels-search {
+  text-align: center;
+}
+
+.hotels-search-link-mimic-button {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color:#ffffff;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
+.page-footer {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.mailing-list-subscribe {
+  text-align: center;
+}
+
+.background-image0 {
+  background-image: url("../images/subbackground.jpg");
+  background-size: 1200px 414.86px;
+  background-repeat: no-repeat;
 }
