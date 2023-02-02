@@ -142,8 +142,44 @@ body {
   text-align: center;
 }
 
-.background-image0 {
+.background-main {
   background-image: url("../images/subbackground.jpg");
   background-size: 1200px 414.86px;
   background-repeat: no-repeat;
+}
+
+.mailing-list-subscribe-title {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.mailing-title-text-color {
+  color:#ffffff;
+}
+
+.mailing-list-subscribe-description {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.mailing-description-text-color {
+  color:#ffffff;
+}
+
+.mailing-list-button {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #82B3D3;
 }
