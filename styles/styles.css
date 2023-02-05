@@ -183,3 +183,35 @@ body {
   color:#ffffff;
   background-color: #82B3D3;
 }
+
+.footer-social-mobile-number {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.inner-main {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.inner-header {
+  color:#ffffff;
+  background-image: url("../images/filterbackground.jpg");
+}
+
+.inner-header {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.hotel-types-catalog-background-image {
+  background-image: url("../images/filterbackground.jpg");
+}
