@@ -280,6 +280,12 @@ color: #ffffff;
   text-transform: uppercase;
 }
 
+.search-count {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
 .hotel-cards-item {
   list-style: none;
 }
@@ -304,8 +310,6 @@ color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: #756157;
@@ -317,11 +321,9 @@ color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background:#82B3D3;
+  background: #82B3D3;
   text-decoration: none;
 }
 
@@ -334,43 +336,33 @@ color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background:#7DB54F;
+  background: #7DB54F;
   text-decoration: none;
 }
 
 .hotel-cards-rating {
-  font-family: "PT-Sans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #333333;
-  background:#F2F2F2;
+  background: #f2f2f2;
 }
 
 
 .pagination-link {
-  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #82B3D3;
 }
 
 .pagination-prev {
-  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
