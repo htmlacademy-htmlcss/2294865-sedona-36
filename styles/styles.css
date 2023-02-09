@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT-Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -219,7 +219,7 @@ color: #ffffff;
   background-color: #ffffff;
 }
 
-.inner-header {
+.hotel-types-catalog {
   color:#ffffff;
   background-image: url("../images/filterbackground.jpg");
 }
@@ -236,9 +236,6 @@ color: #ffffff;
   line-height: 21px;
 }
 
-.hotel-types-catalog-background-image {
-  background-image: url("../images/filterbackground.jpg");
-}
 
 .catalog-filter-title {
   font-weight: 700;
