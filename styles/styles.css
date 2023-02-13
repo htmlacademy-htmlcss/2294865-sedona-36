@@ -315,6 +315,16 @@ body {
   background-color: #82b3d3;
 }
 
+.mailing-list-subscribe-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 20px;
+  gap: 260px;
+  width: 452px;
+  height: 52px;
+}
+
 .field {
   font-family: inherit;
   font-weight: 400;
@@ -324,6 +334,21 @@ body {
   color: rgba(0,0,0,0.6);
   background: #f2f2f2;
 }
+
+
+.page-footer-social-list {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social-list {         /*нужно ли делать отдельный контейнер под footer? */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 
 .contact-phone {
   font-size: 40px;
@@ -340,6 +365,7 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
 
 .hotel-types-catalog {
   color: #ffffff;
@@ -360,6 +386,12 @@ body {
   font-size: 16px;
   color: #ffffff;
   line-height: 21px;
+}
+
+/* Список гостиниц с чекбоксами */
+.catalog-hotels-filter-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .catalog-filter-list {
@@ -384,8 +416,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #ffffff
+  color: #ffffff;
 }
+
+.control-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
 
 .button-blue {
   font-family: inherit;
@@ -403,17 +443,71 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  background-color: rgba(0,0,0,0);
   text-transform: uppercase;
+}
+
+/* Section hotels */
+.cards-types-container {
+  display: flex;
+}
+
+
+.hotels {
+ width: 1060px;
+ margin: 0 auto;
 }
 
 .search-count {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
+  margin-right: 192px;
+  width: 338px
+}
+
+.select-control {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 292px;
+}
+
+.hotel-cards-show-types {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+  width: 160px;
+  list-style: none;
+}
+
+.button-image{
+  color: #000000; /* для видимости пока нет картинок */
+}
+
+/* Отели */
+
+.hotel-cards {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.hotel-cards-img {
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 16px;
 }
 
 .hotel-cards-item {
   list-style: none;
+  width: 340px;
 }
 
 .hotel-cards-title {
@@ -429,6 +523,7 @@ body {
 
 .hotel-cards-price {
   color: #333333;
+  text-align: right;
 }
 
 .hotel-cards-mimic-button {
@@ -472,22 +567,40 @@ body {
   text-transform: uppercase;
   color: #333333;
   background: #f2f2f2;
+  border-radius: 4px;
 }
+
+/*Pagination */
+
+.pagination{
+ display: flex;
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+.pagination-item{
+  width: 60px;
+}
+
 
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background: #82b3d3;
+  border-radius: 4px;
 }
 
-.pagination-prev {
+.pagination-current {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
   background: #f2f2f2;
+  border-radius: 4px;
 }
