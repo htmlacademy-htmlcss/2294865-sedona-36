@@ -26,8 +26,6 @@ body {
   color: #242424;
   background-color: #f2f2f2;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   height: 100%;
   width: 100%
@@ -52,7 +50,6 @@ body {
   display: flex;
   width: 892px;
   margin: 0 auto;
-
 }
 
 .navigation-list {
@@ -69,7 +66,6 @@ body {
   margin-left: auto;
   display: flex;
 }
-
 
 .navigation-list-link {
   font-weight: 700;
@@ -103,8 +99,8 @@ body {
 
 .hero {
   background-image: url("../images/white-boarder.svg"), url("../images/index-background.jpg");
-  background-size: cover, cover;
-  background-repeat: no-repeat no-repeat;   /*не уверен правильный ли это способ */
+  background-size: contain, cover;
+  background-repeat: no-repeat no-repeat;
   background-position: bottom, center;
   background-color: #468284;
   color: #ffffff;
@@ -117,7 +113,6 @@ body {
   width: 458px;
   margin: 0 auto;
 }
-
 
 /*List*/
 .navigation-list-item,
@@ -137,9 +132,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   width: 620px;
-  height: 72px;
-  margin-top: 69px;
-  margin-left: 290px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lead-description {
@@ -148,7 +143,6 @@ body {
   text-align: center;
   color: #333333;
   width: 651px;
-  height: 26px;
   margin-left: 275px;
 }
 
@@ -211,10 +205,6 @@ body {
 .image0 {
   width: 800;
 }
-.image1 {
-  width:800;
-}
-
 
 .services-list {
   text-align: center;
@@ -320,9 +310,7 @@ body {
   align-items: center;
   flex-direction: row;
   padding: 12px 20px;
-  gap: 260px;
-  width: 452px;
-  height: 52px;
+  justify-content: center;
 }
 
 .field {
@@ -331,10 +319,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   align-items: center;
-  color: rgba(0,0,0,0.6);
   background: #f2f2f2;
 }
-
 
 .page-footer-social-list {
   display: flex;
@@ -348,7 +334,6 @@ body {
   padding: 0;
   list-style: none;
 }
-
 
 .contact-phone {
   font-size: 40px;
@@ -365,7 +350,6 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-
 
 .hotel-types-catalog {
   color: #ffffff;
@@ -426,7 +410,6 @@ body {
   color: #ffffff;
 }
 
-
 .button-blue {
   font-family: inherit;
   font-weight: 700;
@@ -451,7 +434,6 @@ body {
 .cards-types-container {
   display: flex;
 }
-
 
 .hotels {
  width: 1060px;
@@ -496,7 +478,6 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .hotel-cards-img {
@@ -536,7 +517,6 @@ body {
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
-
 }
 
 .hotel-cards-button {
@@ -572,16 +552,16 @@ body {
 
 /*Pagination */
 
-.pagination{
- display: flex;
- padding: 0;
- margin: 0;
- list-style: none;
-}
-.pagination-item{
-  width: 60px;
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
+.pagination-item {
+  width: 60px;
+}
 
 .pagination-link {
   font-weight: 700;
