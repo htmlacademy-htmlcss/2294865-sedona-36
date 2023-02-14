@@ -143,7 +143,7 @@ body {
   text-align: center;
   color: #333333;
   width: 651px;
-  margin-left: 275px;
+  margin-left: auto;
 }
 
 .advantages-list {
@@ -437,7 +437,7 @@ body {
 
 .hotels {
  width: 1060px;
- margin: 0 auto;
+ margin: auto;
 }
 
 .search-count {
