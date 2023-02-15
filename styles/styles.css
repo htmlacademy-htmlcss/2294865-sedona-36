@@ -436,8 +436,8 @@ body {
 }
 
 .hotels {
- width: 1060px;
- margin: auto;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .search-count {
@@ -467,7 +467,7 @@ body {
   list-style: none;
 }
 
-.button-image{
+.button-image {
   color: #000000; /* для видимости пока нет картинок */
 }
 
