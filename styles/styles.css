@@ -31,6 +31,18 @@ body {
   width: 100%
 }
 
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
 .page-container {
   margin: 0 auto;
   width: 1200px;
@@ -42,29 +54,49 @@ body {
 
 /*Pages*/
 .page-header {
-  color: #000000;
-  background-color: #ffffff;
+  min-height: 64px;
+}
+
+.logo {
+  width: 138px;
+  display: block;
+  margin-bottom: -10px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.navigation-container {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .navigation {
   display: flex;
-  width: 892px;
-  margin: 0 auto;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 465px;
+  width: 450px;
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 132px;
 }
 
-.navigation-user {
+.navigation-user-list {
   margin: 0;
   padding: 0;
-  width: 310;
-  margin-left: auto;
   display: flex;
+  width: 310px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-user-list .navigation-list-link {
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
 }
 
 .navigation-list-link {
@@ -72,8 +104,10 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+  display: block;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
 }
 
 .navigation-list-link-mimic-button {
@@ -85,6 +119,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
+  width: 160px;
+  min-height: 36px;
+  border: none;
+  padding: 8px 34px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -148,6 +188,7 @@ body {
   margin-right: auto;
 }
 
+/* Преимущества */
 .advantages-list {
   text-align: center;
   display: flex;
@@ -217,6 +258,13 @@ body {
   width: 800;
 }
 
+/*Услуги*/
+.services-container {
+  width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;     /* пока скопировал из advantages container потом можно будет подкорректировать под макет */
+}
+
 .services-list {
   text-align: center;
   display: flex;
@@ -251,8 +299,23 @@ body {
   width: 400px;
 }
 
-.hotels-search {
+.search-container {
+  width: 592px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.hotels-search {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.lead-tytle-hotels-search {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .lead-description-hotels-search {
@@ -269,7 +332,10 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  border: none;
   border-radius: 4px;
+  padding: 8px 50px;
 }
 
 /* Footer */
@@ -282,6 +348,12 @@ body {
   background-image: url("../images/subbackground.jpg");
   background-size: 1200px 415px;
   background-repeat: no-repeat;
+}
+
+.mailing-list-container {
+  width: 684px;
+  margin: 0 auto;
+  padding: 96px 258px 104px;
 }
 
 .mailing-list-subscribe-title {
@@ -314,12 +386,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  border: none;
+  width: 232px;
+  height: 52px;
 }
 
 .mailing-list-subscribe-form {
   display: flex;
   align-items: center;
-  flex-direction: row;
   padding: 12px 20px;
   justify-content: center;
 }
@@ -333,17 +407,30 @@ body {
   background: #f2f2f2;
 }
 
-.page-footer-social-list {
+
+.footer-container {
   display: flex;
   width: 1060px;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 40px 70px 30px;
 }
 
-.footer-social-list {         /*нужно ли делать отдельный контейнер под footer? */
+.page-footer-social-list {
+  max-width: 190px;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+}
+
+.footer-social-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-phone {
@@ -367,31 +454,52 @@ body {
   background-image: url("../images/filterbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 35px 70px 70px;
+  width: 1060;
+  margin: 0 auto;
 }
 
 .inner-header {
+  margin-bottom: 40px;
+}
+
+.inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  width: 1060px;
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   color: #ffffff;
   line-height: 21px;
+  text-decoration: none;
+  display: block;
 }
 
 /* Список гостиниц с чекбоксами */
-.catalog-hotels-filter-container {
-  width: 1060px;
-  margin: 0 auto;
-}
 
 .catalog-filter-list {
   display: flex;
 }
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 70px;
+}
+
 
 .catalog-filter-title {
   font-weight: 700;
@@ -406,6 +514,12 @@ body {
   line-height: 23px;
   color: #ffffff;
 }
+
+.catalog-filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .catalog-price-filter-title {
   font-size: 20px;

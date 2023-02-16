@@ -10,37 +10,39 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="logo" href="#">
-          <img src="./images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
-        </a>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="index.html"> Главная </a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#"> О седоне </a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="catalog.html"> Гостиницы </a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">
-                <span class="visually-hidden"> Поиск.</span>
-              </a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">
-                <span class="visually-hidden"> Избранное.</span>
-              </a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link-mimic-button" href="#">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="navigation-container">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
+          </a>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="index.html"> Главная </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="#"> О седоне </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="catalog.html"> Гостиницы </a>
+              </li>
+            </ul>
+            <ul class="navigation-user-list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="#">
+                  <span class="visually-hidden"> Поиск.</span>
+                </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href="#">
+                  <span class="visually-hidden"> Избранное.</span>
+                </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link-mimic-button" href="#">Хочу сюда!</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="main-index main-container">
@@ -110,87 +112,100 @@
           <p class="lead-description">
             Опытный персонал и качественное обслуживание!
           </p>
+
           <ul class="services-list">
             <li class="services-list-item-dark-grey">
-              <h3 class="services-title">Жильё</h3>
-              <p class="services-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+              <div class="services-container">
+                <h3 class="services-title">Жильё</h3>
+                <p class="services-description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
             <li class="services-list-item">
-              <h3 class="services-title">Еда</h3>
-              <p class="services-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-              </p>
+              <div class="services-container">
+                <h3 class="services-title">Еда</h3>
+                <p class="services-description">
+                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
             </li>
             <li class="services-list-item-dark-grey">
-              <h3 class="services-title">Сувениры</h3>
-              <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+              <div class="services-container">
+                <h3 class="services-title">Сувениры</h3>
+                <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="hotels-search">
-          <h2 class="visually-hidden">Бронирование.</h2>
-          <p class="lead">Заинтересовались?</p>
-          <p class="lead-description-hotels-search">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие
-            предложения гостиниц в Седоне
-          </p>
-          <a class="hotels-search-link-mimic-button" href="#">Поиск Гостиниц в Седоне.</a>
+          <div class="search-container">
+            <h2 class="visually-hidden">Бронирование.</h2>
+            <p class="lead-tytle-hotels-search">Заинтересовались?</p>
+            <p class="lead-description-hotels-search">
+              Укажите предполагаемые даты поездки,и мы покажем вам лучшие
+              предложения гостиниц в Седоне
+            </p>
+            <a class="hotels-search-link-mimic-button" href="#">Поиск Гостиниц в Седоне</a>
+          </div>
         </section>
       </main>
 
       <footer class="page-footer">
         <section class="mailing-list-subscribe background-main">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <h3 class="mailing-list-subscribe-title mailing-title-text-color">Подпишитесь на рассылку</h3>
-          <p class="mailing-list-subscribe-description mailing-description-text-color">
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <form class="mailing-list-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="mailing-list-email"> Email</label>
-            <input class="field" placeholder="email@example.com" type="email" name="mailing-list-email"
-              id="mailing-list-email" required>
-            <button class="mailing-list-button" type="submit">Подписаться</button>
-          </form>
+          <div class="mailing-list-container">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <h3 class="mailing-list-subscribe-title mailing-title-text-color">Подпишитесь на рассылку</h3>
+            <p class="mailing-list-subscribe-description mailing-description-text-color">
+              Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+            <form class="mailing-list-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="mailing-list-email"> Email</label>
+              <input class="field" placeholder="email@example.com" type="email" name="mailing-list-email"
+                id="mailing-list-email" required>
+              <button class="mailing-list-button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
 
-        <section class="page-footer-social-list">
-          <h2 class="visually-hidden">Социальные сети.</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте.</span>
-                <img src="./images/vkontakte.svg" alt="Вконтакте">
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм.</span>
-                <img src="./images/tg.svg" alt="Телеграмм">
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademy">
-                <span class="visually-hidden">Youtube.</span>
-                <img src="./images/youtube.svg" alt="Youtube">
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="footer-container">
+          <section class="page-footer-social-list">
+            <h2 class="visually-hidden">Социальные сети.</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте.</span>
+                  <img src="./images/vkontakte.svg" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграмм.</span>
+                  <img src="./images/tg.svg" alt="Телеграмм">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.youtube.com/user/htmlacademy">
+                  <span class="visually-hidden">Youtube.</span>
+                  <img src="./images/youtube.svg" alt="Youtube">
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="footer-social-mobile-number">
-          <h2 class="visually-hidden">Мобильный телефон.</h2>
-          <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
+          <section class="footer-social-mobile-number">
+            <h2 class="visually-hidden">Мобильный телефон.</h2>
+            <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </section>
 
-        <section class="page-footer-logo">
-          <h2 class="visually-hidden">Сайт разработчика.</h2>
-          <a href="https://htmlacademy.ru/">
-            <img src="./images/htmlacademy.svg" alt="Логотип HtmlAcademy.">
-          </a>
-        </section>
+          <section class="page-footer-logo">
+            <h2 class="visually-hidden">Сайт разработчика.</h2>
+            <a href="https://htmlacademy.ru/">
+              <img src="./images/htmlacademy.svg" alt="Логотип HtmlAcademy.">
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
