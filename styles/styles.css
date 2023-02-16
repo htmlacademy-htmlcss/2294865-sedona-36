@@ -39,7 +39,7 @@ body {
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden;          пока оставлю закомментированным без картинок-ссылок не удобно ориентироваться
 }
 */
 
@@ -407,7 +407,6 @@ body {
   background: #f2f2f2;
 }
 
-
 .footer-container {
   display: flex;
   width: 1060px;
@@ -495,7 +494,6 @@ body {
 }
 
 /* Список гостиниц с чекбоксами */
-
 .catalog-filter-list {
   display: flex;
 }
@@ -506,7 +504,6 @@ body {
   border: none;
   margin-right: 70px;
 }
-
 
 .catalog-filter-title {
   font-weight: 700;
@@ -526,7 +523,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 
 .catalog-price-filter-title {
   font-size: 20px;
@@ -683,7 +679,6 @@ body {
 }
 
 /*Pagination */
-
 .pagination {
   display: flex;
   padding: 0;
@@ -715,7 +710,6 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-
 
 .pagination-current {
   font-weight: 700;
