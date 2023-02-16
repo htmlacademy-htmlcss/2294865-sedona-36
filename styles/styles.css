@@ -472,6 +472,13 @@ body {
 }
 
 /* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
 .breadcrumbs-list {
   display: flex;
   padding: 0;
@@ -684,6 +691,10 @@ body {
   list-style: none;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-item {
   width: 60px;
 }
@@ -691,13 +702,20 @@ body {
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
+  text-decoration: none;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
-  background: #82b3d3;
+  background-color: #82b3d3;
   border-radius: 4px;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  text-align: center;
 }
+
 
 .pagination-current {
   font-weight: 700;
