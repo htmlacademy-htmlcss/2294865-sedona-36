@@ -31,7 +31,7 @@ body {
   width: 100%
 }
 
-/*.visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -39,9 +39,9 @@ body {
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;          пока оставлю закомментированным без картинок-ссылок не удобно ориентироваться
+  overflow: hidden;
 }
-*/
+
 
 .page-container {
   margin: 0 auto;
@@ -54,7 +54,9 @@ body {
 
 /*Pages*/
 .page-header {
-  min-height: 64px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
 }
 
 .logo {
@@ -65,14 +67,14 @@ body {
   margin-right: 30px;
 }
 
-.navigation-container {
+/* .navigation-container {
   width: 1060px;
   display: flex;
   margin: 0 auto;
-}
+}*/
 
 .navigation {
-  display: flex;
+ display: flex;
 }
 
 .navigation-list {
@@ -475,7 +477,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .breadcrumbs-list {
@@ -558,6 +559,22 @@ body {
   text-transform: uppercase;
 }
 
+.button-image-tile {
+  background-image: url("../images/tile.svg");
+}
+
+.button-image-monitor {
+  background-image: url("../images/monitor.svg");
+
+}
+
+.button-image-list {
+  background-image: url("../images/list.svg");
+}
+
+
+
+
 /* Section hotels */
 .cards-types-container {
   display: flex;
@@ -595,9 +612,6 @@ body {
   list-style: none;
 }
 
-.button-image {
-  color: #000000; /* для видимости пока нет картинок */
-}
 
 /* Отели */
 
