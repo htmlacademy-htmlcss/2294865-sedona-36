@@ -71,7 +71,7 @@ body {
   width: 1060px;
   display: flex;
   margin: 0 auto;
-}*/
+} */
 
 .navigation {
  display: flex;
@@ -254,7 +254,6 @@ body {
   min-height: 200px;
   padding: 90px 85px;
 }
-
 
 .image0 {
   width: 800;
@@ -559,21 +558,31 @@ body {
   text-transform: uppercase;
 }
 
-.button-image-tile {
-  background-image: url("../images/tile.svg");
+/* Переключение вида карточек */
+.hotel-cards-show-types {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  width: 160px;
 }
 
-.button-image-monitor {
-  background-image: url("../images/monitor.svg");
-
+.hotel-cards-show-types-item{
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
 }
 
-.button-image-list {
-  background-image: url("../images/list.svg");
-}
-
-
-
+/*.button-image-tile {
+  display: block;
+  background-image: url("../images/tile.svg") no-repeat;
+  width: 16px;
+  height: 14px;
+  background-color: rgba(0,0,0,0);
+  margin: 0;
+  padding: 0;
+} */
 
 /* Section hotels */
 .cards-types-container {
@@ -611,7 +620,6 @@ body {
   width: 160px;
   list-style: none;
 }
-
 
 /* Отели */
 
