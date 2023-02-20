@@ -492,15 +492,20 @@ body {
 }
 
 /* Список гостиниц с чекбоксами */
-.catalog-filter-list {
-  display: flex;
-}
 
-.catalog-filter-group {
+/*.catalog-filter-group {
   margin: 0;
   padding: 0;
   border: none;
   margin-right: 70px;
+} */
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 150.43px;
+  height: 157px;
 }
 
 .catalog-filter-title {
@@ -514,12 +519,19 @@ body {
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
+  list-style: none;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
-.catalog-filter-container {
+.catalog-filter-item:last-child{
+  margin-bottom: 0;
+}
+
+.catalog-filter-form {
   display: flex;
   justify-content: space-between;
+
 }
 
 .catalog-price-filter-title {
@@ -527,6 +539,8 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .control-input {
@@ -534,6 +548,15 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #ffffff;
+}
+
+.catalog-button-container {
+  display:block ;
+  width: 191px;
+  height: 104px;
+  align-items: center;
+  padding: 0;
+  gap: 32px;
 }
 
 .button-blue {
