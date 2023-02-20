@@ -564,23 +564,41 @@ body {
   margin-left: auto;
   flex-wrap: wrap;
   width: 160px;
+  gap: 8px;
 }
 
-.hotel-cards-show-types-item{
+/*.hotel-cards-show-types-item{
   width: 48px;
   height: 48px;
   margin-right: 8px;
+}*/
+
+.button-image-show-type {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  border: 2px solid #e5e5e5;
 }
 
-/*.button-image-tile {
-  display: block;
-  background-image: url("../images/tile.svg") no-repeat;
-  width: 16px;
-  height: 14px;
-  background-color: rgba(0,0,0,0);
-  margin: 0;
-  padding: 0;
-} */
+.button-image-current {
+  border-color: #000000;
+}
+
+.button-image-tile {
+  background-image: url("../images/tile.svg");
+}
+
+.button-image-monitor {
+  background-image: url("../images/monitor.svg");
+}
+
+.button-image-list {
+  background-image: url("../images/list.svg");
+}
 
 /* Section hotels */
 .cards-types-container {
