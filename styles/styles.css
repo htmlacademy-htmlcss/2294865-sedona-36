@@ -73,7 +73,7 @@ body {
 } */
 
 .navigation {
- display: flex;
+  display: flex;
 }
 
 .navigation-list {
@@ -298,15 +298,10 @@ body {
   width: 400px;
 }
 
-.search-container {
-  width: 592px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .hotels-search {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lead-tytle-hotels-search {
@@ -314,7 +309,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0 auto
 }
 
 .lead-description-hotels-search {
@@ -349,10 +344,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.mailing-list-container {
-  width: 684px;
-  margin: 0 auto;
-  padding: 96px 258px 104px;
+.mailing-list-subscribe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .mailing-list-subscribe-title {
@@ -360,7 +355,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+  align-items: center;
 }
 
 .mailing-title-text-color {
@@ -370,7 +365,6 @@ body {
 .mailing-list-subscribe-description {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .mailing-description-text-color {
