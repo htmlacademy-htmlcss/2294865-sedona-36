@@ -673,9 +673,8 @@ body {
 
 .hotel-cards-item {
   display: grid;
-  grid-template-rows: 212px 28px 21px 36px 37px;
+  grid-template-rows: auto auto;
   grid-template-columns: 140px 140px;
-  gap: 20px;
   padding: 20px;
 }
 
@@ -713,7 +712,7 @@ body {
 .hotel-cards-mimic-button {
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  height: 36px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
@@ -724,6 +723,7 @@ body {
   padding: 8px 10px;
   grid-row: 4;
   grid-column: 1;
+  gap: 10;
 }
 
 .hotel-cards-button {
@@ -737,19 +737,11 @@ body {
   text-decoration: none;
   grid-row: 4;
   grid-column: 2;
+  gap: 10;
 }
 
-.hotel-cards-button-favourite {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
+.button-favourite {
   background: #7db54f;
-  text-decoration: none;
-  grid-row: 5;
-  grid-column: 1;
 }
 
 .hotel-cards-rating {
