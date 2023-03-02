@@ -61,10 +61,12 @@
               <li class="breadcrumbs-list">
                 <a class="breadcrumbs-mimic-button" href="index.html">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
-                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
-                    </svg>
-                     <!--получается стрелочку втавить через ::before?-->
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                  </svg>
+                  <!--получается стрелочку втавить через ::before?-->
                   <span class="visually-hidden">Переход на главную страницу.</span>
                 </a>
               </li>
@@ -124,8 +126,8 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-price-filter">
-              <legend class="catalog-price-filter-title">Стоимость, ₽:</legend>
+            <fieldset class="catalog-filter-group price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               от
               <label class="control">
                 <input class="control-input-min" type="number" name="min-price" value="0">
@@ -145,36 +147,34 @@
           </form>
         </section>
 
+        <section class="search-card-types">
+          <h2 class="search-count">Найдено Гостиниц: <span>38</span></h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap"> Сначала дешевые </option>
+            <option value="popular"> Сначала популярные </option>
+            <option value="expansive"> Сначала дорогие </option>
+          </select>
+
+          <ul class="hotel-cards-show-types">
+            <li class="hotel-cards-show-types-item">
+              <a class="button-image-tile button-image-current button-image-show-type" href="#">
+                <span class="visually-hidden"> Показать карточки </span>
+              </a>
+            </li>
+            <li class="hotel-cards-show-types-item">
+              <a class="button-image-monitor button-image-show-type" href="#">
+                <span class="visually-hidden"> Показать крупные карточки </span>
+              </a>
+            </li>
+            <li class="hotel-cards-show-types-item">
+              <a class="button-image-list button-image-show-type" href="#">
+                <span class="visually-hidden"> Показать список </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
         <section class="hotels">
-          <div class="cards-types-container">
-            <h2 class="search-count">Найдено Гостиниц: <span>38</span></h2>
-            <div class="select sorting-type">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap"> Сначала дешевые </option>
-                <option value="popular"> Сначала популярные </option>
-                <option value="expansive"> Сначала дорогие </option>
-              </select>
-            </div>
-
-            <ul class="hotel-cards-show-types">
-              <li class="hotel-cards-show-types-item">
-                <a class="button-image-tile button-image-current button-image-show-type" href="#">
-                  <span class="visually-hidden"> Показать карточки </span>
-                </a>
-              </li>
-              <li class="hotel-cards-show-types-item">
-                <a class="button-image-monitor button-image-show-type" href="#">
-                  <span class="visually-hidden"> Показать крупные карточки </span>
-                </a>
-              </li>
-              <li class="hotel-cards-show-types-item">
-                <a class="button-image-list button-image-show-type" href="#">
-                  <span class="visually-hidden"> Показать список </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
           <ul class="hotel-cards">
             <li class="hotel-cards-item">
               <a class="hotel-cards-link" href="#">
@@ -240,29 +240,32 @@
               <p class="hotel-cards-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
-
-          <ol class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <span>...</span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ol>
         </section>
-      </main>
+
+        <section class="page-pagination">
+        <ol class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <span>...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ol>
+      </section>
+
+    </main>
 
       <footer class="page-footer">
         <section class="mailing-list-subscribe">

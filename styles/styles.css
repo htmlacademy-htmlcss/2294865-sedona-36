@@ -590,27 +590,38 @@ text-align: center;
 
 /* Список гостиниц с чекбоксами */
 
-/*.catalog-filter-group {
+.catalog-filter-form {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.catalog-filter-group {
   margin: 0;
   padding: 0;
   border: none;
   margin-right: 70px;
-} */
+  width: 170px;
+}
+
+.price {
+  width: 300px;
+  align-self: flex-start;
+}
 
 .catalog-filter-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 150.43px;
-  height: 157px;
 }
 
 .catalog-filter-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  text-transform: capitalize;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-item {
@@ -621,15 +632,6 @@ text-align: center;
   margin-bottom: 16px;
 }
 
-.catalog-filter-item:last-child{
-  margin-bottom: 0;
-}
-
-.catalog-filter-form {
-  display: flex;
-  justify-content: space-between;
-
-}
 
 .catalog-price-filter-title {
   font-size: 20px;
@@ -648,12 +650,9 @@ text-align: center;
 }
 
 .catalog-button-container {
-  display:block ;
-  width: 191px;
-  height: 104px;
-  align-items: center;
-  padding: 0;
-  gap: 32px;
+  display:flex ;
+  flex-direction: column;
+  width: 200px;
 }
 
 .button-blue {
@@ -664,6 +663,11 @@ text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   background: #82b3d3;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  padding: 8px 50px;
+  width: 191px;
 }
 
 .button {
@@ -674,6 +678,11 @@ text-align: center;
   color: #ffffff;
   background-color: rgba(0,0,0,0);
   text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 50px;
+  width: 191px;
+  border: none;
 }
 
 /* Переключение вида карточек */
@@ -730,13 +739,25 @@ text-align: center;
   margin: 0 auto;
 }
 
+.search-card-types {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .search-count {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-right: 192px;
-  width: 338px
+  margin: 0;
+  max-width: 350px;
+}
+
+.search-card-types {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .select {
@@ -753,7 +774,10 @@ text-align: center;
   line-height: 21px;
   color: #333333;
   width: 292px;
-  height: 49px;
+  min-height: 49px;
+  padding: 12px 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .hotel-cards-show-types {
@@ -764,6 +788,7 @@ text-align: center;
   width: 160px;
   list-style: none;
 }
+
 
 /* Отели */
 
@@ -869,6 +894,12 @@ text-align: center;
 }
 
 /*Pagination */
+
+.page-pagination {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .pagination {
   display: flex;
   padding: 0;
