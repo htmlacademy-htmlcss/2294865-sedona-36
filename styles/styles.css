@@ -140,6 +140,21 @@ text-align: center;
   box-sizing: border-box;
 }
 
+ .navigation-list-link-mimic-button:hover,
+ .navigation-list-link-mimic-button:focus {
+  background-color: #615048;
+ }
+
+ .navigation-list-link-mimic-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+ }
+
+ .navigation-list-link-mimic-button:disabled {
+  background-color: #e5e5e5e5;
+ }
+
+
 .main-container {
   flex-grow: 1;
 }
@@ -236,8 +251,8 @@ text-align: center;
 }
 
 .advantages-description {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   color: #333333;
 }
@@ -434,6 +449,20 @@ text-align: center;
   padding: 8px 50px;
 }
 
+.hotels-search-link-mimic-button:hover,
+.hotels-search-link-mimic-button:focus {
+  background-color: #615048;
+}
+.hotels-search-link-mimic-button:active {
+  color: rgba(255, 255, 255, 0.3) ;
+  background-color: #756157;
+}
+
+.hotels-search-link-mimic-button:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
 /* Footer */
 .page-footer {
   color: #000000;
@@ -485,6 +514,22 @@ text-align: center;
   border: none;
   width: 232px;
   height: 52px;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 10px;
+}
+
+.mailing-list-button:hover,
+.mailing-list-button:focus {
+  background-color: #68a2ca;
+}
+
+.mailing-list-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mailing-list-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .mailing-list-subscribe-form {
@@ -495,12 +540,22 @@ text-align: center;
 }
 
 .field {
+  width: 452px;
+  height: 52px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  align-items: center;
-  background: #f2f2f2;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  color: #000000;
+  padding: 5px 10px 5px 20px;
+}
+
+.field:hover {
+  outline: 2px solid #68a2ca;
+  border-radius: 4px;
 }
 
 .footer-container {
@@ -588,6 +643,8 @@ text-align: center;
   display: block;
 }
 
+
+
 /* Список гостиниц с чекбоксами */
 
 .catalog-filter-form {
@@ -670,6 +727,19 @@ text-align: center;
   width: 191px;
 }
 
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:disabled {
+  background-color: #e5e5e5;
+}
+
 .button {
   font-family: inherit;
   font-weight: 700;
@@ -683,6 +753,24 @@ text-align: center;
   padding: 8px 50px;
   width: 191px;
   border: none;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.button:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+color: rgba(255, 255, 255, 0.1);
 }
 
 /* Переключение вида карточек */
@@ -711,6 +799,18 @@ text-align: center;
   background-position: center;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
+}
+
+.button-image-show-type:hover {
+  border: 2px solid  #000000;
+}
+
+.button-image-show-type:focus-visible {
+  border: 2px solid #68a2ca;
+}
+
+.button-image-show-type:active {
+  border: 2px solid #000000;
 }
 
 .button-image-current {
@@ -780,6 +880,20 @@ text-align: center;
   border-radius: 4px;
 }
 
+.select-control:hover {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+  outline: none;
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .hotel-cards-show-types {
   display: flex;
   margin: 0;
@@ -844,8 +958,8 @@ text-align: center;
 
 .hotel-cards-mimic-button {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
@@ -853,6 +967,19 @@ text-align: center;
   text-align: center;
   border-radius: 4px;
   padding: 8px 10px;
+}
+
+.hotel-cards-mimic-button:hover,
+.hotel-cards-mimic-button:focus {
+  background-color: #615048;
+}
+
+.hotel-cards-mimic-button:active {
+  background-color: #e5e5e5;
+}
+
+.hotel-cards-mimic-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .hotel-cards-button {
@@ -864,10 +991,33 @@ text-align: center;
   color: #ffffff;
   background: #82b3d3;
   text-decoration: none;
+  border: none;
+}
+
+.hotel-cards-button:hover,
+.hotel-cards-button:focus {
+  background-color: #68a2ca;
+}
+
+.hotel-cards-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-cards-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .button-favourite {
   background: #7db54f;
+}
+
+.button-favourite:hover,
+.button-favourite:focus {
+  background-color: #6c9e42;
+}
+
+.button-favourite:disabled {
+  background-color: #e5e5e5;
 }
 
 .hotel-cards-rating {
@@ -888,6 +1038,15 @@ text-align: center;
   height: 17px;
   width: 140px;
 }
+
+.stars-2 {
+  width:42px;
+}
+
+.stars-3 {
+  width:66px;
+}
+
 
 .stars-4 {
   width: 80px;
