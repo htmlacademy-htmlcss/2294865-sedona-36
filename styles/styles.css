@@ -685,6 +685,33 @@ body {
   display: block;
 }
 
+.breadcrumbs-home-button {
+  background-image: url("../images/homelink.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 15px;
+  background-position: center;
+  display: block;
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+  padding: 10px 10px;
+}
+
+.breadcrumbs-home-button:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-list:not(:last-child)::after {
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  width: 8px;
+  height: 10px;
+  margin-right: 11px;
+}
+
+
 
 
 /* Список гостиниц с чекбоксами */
