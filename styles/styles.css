@@ -945,6 +945,9 @@ color: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
 
+.search-card-types {
+  padding-top: 67px;
+}
 
 /* Отели */
 
@@ -986,7 +989,6 @@ color: rgba(255, 255, 255, 0.1);
   color: #000000;
   margin: 0;
   margin-bottom: 16px;
-  margin-left: 20px;
 }
 
 .hotel-cards-type {
@@ -1145,4 +1147,30 @@ color: rgba(255, 255, 255, 0.1);
   color: #000000;
   background: #f2f2f2;
   border-radius: 4px;
+}
+
+.pagination-link-next {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pagination-link:hover:not(.pagination-current):not(.pagination-link-next),
+.pagination-link:focus:not(.pagination-current):not(.pagination-link-next) {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active:not(.pagination-link-current) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link-next:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-link-next:focus {
+  background-color: #e5e5e5;
+  color:rgba(0, 0, 0, 0.3);
 }
