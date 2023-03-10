@@ -207,8 +207,7 @@ body {
   color: #ffffff;
   text-align: center;
   /*1200px 485px;*/
-  padding-top: 51px;
-  padding-bottom: 82px;
+ padding: 51px 150px 82px;
 }
 
 .hero-image {
@@ -546,6 +545,7 @@ body {
   line-height: 24px;
   border: none;
   background-color: #f2f2f2;
+  box-sizing: border-box;
   border-radius: 4px 0 0 4px;
   color: #000000;
   padding: 5px 10px 5px 20px;
@@ -760,6 +760,7 @@ body {
   margin-bottom: 32px;
 }
 
+/* чекбоксы и радио кнопки */
 .control-input {
   font-weight: 400;
   font-size: 16px;
@@ -767,6 +768,70 @@ body {
   color: #ffffff;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content:"";
+  background-image: url("../images/catalogcheck.svg");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 10px;
+}
+
+.control:hover {
+  opacity: 0.5;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83d3d3;
+}
+
+.control-input:active + .control-mark {
+  outline: 2px solid #83d3d3;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.control-label {
+  margin-left: 16px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
+/* кнопки в каталоге */
 .catalog-button-container {
   display: flex;
   flex-direction: column;
@@ -833,6 +898,126 @@ body {
 .button:disabled {
 color: rgba(255, 255, 255, 0.1);
 }
+
+/* Список с ползунками */
+.range-inputs {
+  display: flex;
+}
+
+.catalog-min-price,
+.catalog-max-price {
+  width: 143px;
+  height: 48px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  border-width: 0;
+  background-color: #f2f2f2;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  appearance: textfield;
+}
+
+.catalog-min-price {
+  margin-right: 2px;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-max-price {
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-min-price:hover,
+.catalog-max-price:hover {
+  background-color: #e6e6e6;
+}
+
+.catalog-min-price:focus,
+.catalog-max-price:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.catalog-min-price:active,
+.catalog-max-price:active {
+  outline: 2px solid #000000;
+}
+
+.catalog-min-price:disabled,
+.catalog-max-price:disabled {
+  background-color: #e5e5e5;
+}
+
+.catalog-min-price::-webkit-outer-spin-button,
+.catalog-min-price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-max-price::-webkit-outer-spin-button,
+.catalog-max-price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-to {
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.3;
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  align-items: center;
+  text-align: right;
+
+}  /* не понимаю куда они улетают */
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #424040;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border-width: 0;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
 
 /* Переключение вида карточек */
 .hotel-cards-show-types {
@@ -933,12 +1118,16 @@ color: rgba(255, 255, 255, 0.1);
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
   width: 292px;
   min-height: 49px;
   padding: 12px 20px;
+  padding-right: 40px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center; ;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1192,3 +1381,5 @@ color: rgba(255, 255, 255, 0.1);
   background-color: #e5e5e5;
   color:rgba(0, 0, 0, 0.3);
 }
+
+/* модальное окно /*
