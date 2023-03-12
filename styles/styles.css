@@ -1135,7 +1135,7 @@ color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center; ;
+  background-position: right 20px center;
   appearance: none;
 }
 
@@ -1451,11 +1451,11 @@ color: rgba(255, 255, 255, 0.1);
 
 /*.close {
   display: none;
-} */
+}*/
 
 .arrival-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: normal;
   flex-wrap: wrap;
 }
 
@@ -1467,6 +1467,7 @@ color: rgba(255, 255, 255, 0.1);
   font-size: 20px;
   line-height: 24px;
   padding-top: 12px;
+
 }
 
 .calendar-field {
@@ -1487,28 +1488,28 @@ color: rgba(255, 255, 255, 0.1);
 
 .field-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 23px;
 }
 
 .button-minus {
-  position: absolute;
-  content: "";
+ /* position: absolute; */
+ /*  content: "";*/
   appearance: textfield;
   width: 40px;
   height: 48px;
-  left: 0;
+ /* left: 0;*/
   padding: 0;
   border-radius: 4px;
 }
 
 .button-plus {
-  position: absolute;
-  content: "";
+/*  position: absolute;*/
+ /*  content: ""; */
   width: 40px;
   height: 48px;
-  right: 0;
+/*  right: 0;*/
   padding: 0;
   border-radius: 4px;
 }
@@ -1520,8 +1521,10 @@ color: rgba(255, 255, 255, 0.1);
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  min-height: 48px;
-  width: 110px;
+  /*min-height: 48px;*/
+ /* width: 110px;*/
+  width: 31px;
+  height: 21px;
   padding: 14px 10px;
   margin: 0;
   border: none;
@@ -1591,10 +1594,11 @@ color: rgba(255, 255, 255, 0.1);
 }
 
 .minus {
-  position: absolute;
-  left: 50%;
+ /* position: absolute;*/
+ /* left: 50%;*/
   transform: translate(-50%, -50%);
 }
+
 
 .input-buttons {
   position: relative;
@@ -1632,7 +1636,10 @@ color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background-color: #83b3d3;
   margin-left: 13px;
-  display: block;
+  display: flex;
+  background-image: url("../images/i-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tooltip-icon {

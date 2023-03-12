@@ -233,8 +233,8 @@
 
     <div class="modal-container close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть окно</span>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
         </button>
 
         <section class="modal-content">
@@ -258,7 +258,7 @@
             <div class="field-group field-group-half-adults">
               <label class="form-label" for="adults-add">Взрослые:</label>
               <div class="input-buttons">
-                <button class="modal-button button-minus" type="submit">
+                <button class="modal-button button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых.</span>
                   <svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -268,7 +268,7 @@
 
                 <input class="field-group count-field" type="number" name="check-in-number" value="2"
                   placeholder="Укажите количество">
-                <button class="modal-button button-plus" type="submit">
+                <button class="modal-button button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество взрослых.</span>
                   <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -282,16 +282,15 @@
               <label class="form-label" for="child-add">Дети:</label>
               <div class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tolltip-label-child">
-                  <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
-                  </svg>
+
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-child">
-                  Укажите количество детей, которые
-                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  Укажите количество детей,<br> которые
+                  будут с вами, возраст которых от 6 до 18 лет.Дети <br> до 6 лет размещаются<br> бесплатно.
                 </span>
               </div>
+              </div>
+
               <div class="input-buttons">
                 <button class="modal-button button-minus" type="submit">
                   <span class="visually-hidden">Уменьшить количество детей.</span>
@@ -303,7 +302,7 @@
 
                 <input class="field-group count-field" type="number" name="check-in-number" value="2"
                   placeholder="Укажите количество">
-                <button class="modal-button button-plus" type="submit">
+                <button class="modal-button button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество детей.</span>
                   <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
