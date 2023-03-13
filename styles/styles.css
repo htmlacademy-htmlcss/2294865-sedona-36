@@ -1439,6 +1439,18 @@ color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus:not(:active) {
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3 ;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1512,6 +1524,56 @@ color: rgba(255, 255, 255, 0.1);
 /*  right: 0;*/
   padding: 0;
   border-radius: 4px;
+}
+
+.calendar-field:hover {
+  background-color: #e6e6e6;
+}
+
+.calendar-field:focus {
+  outline: 3px solid #000000;
+}
+
+.calendar-field:active,
+.calendar-field:not(:placeholder-shown){
+  outline: 3px solid #000000;
+}
+
+.calendar-field:not(:placeholder-shown):not(:focus){
+  outline: none;
+}
+
+.count-field:hover {
+  background-color: #e6e6e6;
+}
+
+.count-field:focus {
+  outline: 3px solid #000000;
+}
+
+.count-field:active,
+.count-field:not(:placeholder-shown){
+  outline: 3px solid #000000;
+}
+
+.count-field:not(:placeholder-shown):not(:focus){
+  outline: none;
+}
+
+.button-plus:hover,
+.button-minus:hover {
+  opacity: 1;
+}
+
+.button-plus:active,
+.button-minus:active {
+  opacity: 0.3;
+}
+
+.button-plus:focus:not(:active),
+.button-minus:focus:not(:active) {
+  opacity: 1;
+  outline: 3px solid #82b3d3;
 }
 
 .count-field {
@@ -1690,4 +1752,17 @@ color: rgba(255, 255, 255, 0.1);
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.modal-sumbit:hover,
+.modal-sumbit:focus {
+  background-color: #68a2ca;
+}
+
+.modal-sumbit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-sumbit:disabled {
+  background-color: #e5e5e5;
 }
