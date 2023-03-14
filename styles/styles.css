@@ -18,6 +18,13 @@ html {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -136,7 +143,6 @@ body {
   margin-right: 24px;
 }
 
-
 .counter {
   display: block;
   position: absolute;
@@ -159,7 +165,7 @@ body {
   display: block;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 20px 16px;
+  padding: 20px 19px;
   position: relative;
 }
 
@@ -247,6 +253,11 @@ body {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 26px;
+}
+
+.margin-lead {
+  margin-bottom: 20px;
 }
 
 .lead-description {
@@ -258,8 +269,8 @@ body {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 90px;
-  padding-bottom: 20px;
+  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 /* Преимущества */
@@ -278,6 +289,7 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 34px;
 }
 
 .advantages-title::after {
@@ -339,9 +351,10 @@ body {
 }
 
 .advantages-container {
-  width: 230px;
-  min-height: 200px;
+  width: 400px;
+  min-height: 385px;
   padding: 80px 85px;
+  box-sizing: border-box;
 }
 
 .image0 {
@@ -374,6 +387,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: -33px;
 }
 
 .services-title::before {
@@ -430,13 +444,19 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto
+  margin-top: -24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -14px;
+  padding-bottom: 44px;
 }
 
 .lead-description-hotels-search {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-top: -11px;
+  margin-bottom: 55px;
 }
 
 .hotels-search-link-mimic-button {
@@ -522,7 +542,7 @@ body {
   height: 52px;
   border-radius: 0 4px 4px 0;
   padding: 8px 10px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .mailing-list-button:hover,
@@ -542,7 +562,7 @@ body {
 .mailing-list-subscribe-form {
   display: flex;
   align-items: center;
-  padding: 12px 20px;
+  padding: 28px 20px;
   justify-content: center;
 }
 
@@ -652,7 +672,7 @@ body {
   background-image: url("../images/filterbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 57px;
   width: 1060px;
   margin: 0 auto;
 }
@@ -731,13 +751,15 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  margin-right: 70px;
+  margin-right: 50px;
   width: 170px;
 }
 
 .price {
   width: 300px;
   align-self: flex-start;
+  margin-left: 71px;
+  margin-right: 58px;
 }
 
 .catalog-filter-label {
@@ -851,7 +873,8 @@ body {
 .catalog-button-container {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  align-self: flex-start;
+  padding-top: 56px;
 }
 
 .button-blue {
@@ -931,7 +954,7 @@ color: rgba(255, 255, 255, 0.1);
   padding-right: 40px;
   border-width: 0;
   background-color: #f2f2f2;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1023,7 +1046,7 @@ color: rgba(255, 255, 255, 0.1);
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -1px;
 }
 
 .range-toggle:hover {
@@ -1149,6 +1172,7 @@ color: rgba(255, 255, 255, 0.1);
   background-position: right 20px center;
   appearance: none;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .select-control:hover {
@@ -1175,7 +1199,7 @@ color: rgba(255, 255, 255, 0.1);
 }
 
 .search-card-types {
-  padding-top: 67px;
+  padding-top: 50px;
 }
 
 /* Отели */
@@ -1448,7 +1472,6 @@ color: rgba(255, 255, 255, 0.1);
   background-image: url("../images/crossmodal.svg");
   background-repeat: no-repeat;
   background-position: center;
-  content: "";
   cursor: pointer;
 }
 
@@ -1474,9 +1497,9 @@ color: rgba(255, 255, 255, 0.1);
   color: #000000;
 }
 
-/*.close {
+.close {
   display: none;
-}*/
+}
 
 .arrival-form {
   display: flex;
@@ -1492,7 +1515,6 @@ color: rgba(255, 255, 255, 0.1);
   font-size: 20px;
   line-height: 24px;
   padding-top: 12px;
-
 }
 
 .calendar-field {
@@ -1592,7 +1614,6 @@ color: rgba(255, 255, 255, 0.1);
 .count-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
 
 .button-plus:hover,
 .button-minus:hover {
@@ -1696,7 +1717,6 @@ color: rgba(255, 255, 255, 0.1);
   margin-left: 46px;
 }
 
-
 .field-group-half-adults {
   display: flex;
   justify-content: space-between;
@@ -1704,11 +1724,9 @@ color: rgba(255, 255, 255, 0.1);
   margin-right: auto;
 }
 
-
 .field-group-half-child {
   margin-right: 46px;
 }
-
 
 .tooltip {
   position: absolute;
