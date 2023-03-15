@@ -1792,6 +1792,7 @@ body {
   background-image: url("../images/i-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor:pointer;
 }
 
 .tooltip-icon {
@@ -1831,7 +1832,7 @@ body {
   display: block;
 }
 
-.tooltip-text:after {
+.tooltip-text::after {
   content: '';
   background-image: url("../images/tooltiparrow.svg");
   width: 19px;
