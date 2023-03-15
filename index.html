@@ -246,20 +246,20 @@
 
             <div class="field-group">
               <label class="form-label" for="check-in-date">Дата Заезда:</label>
-              <input class="form-field calendar-field" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020"
-                placeholder="Укажите дату">
+              <input class="form-field calendar-field" id="check-in-date" type="text" name="check-in-date"
+                value="27 апреля 2020" placeholder="Укажите дату">
               <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
             </div>
 
             <div class="field-group">
-              <label class="form-label" for="check-in-date">Дата Выезда:</label>
-              <input class="form-field calendar-field" id="check-in-date" type="text" name="check-in-date" value="1 сентября 2023"
-                placeholder="Укажите дату">
+              <label class="form-label" for="check-out-date">Дата Выезда:</label>
+              <input class="form-field calendar-field" id="check-out-date" type="text" name="check-out-date"
+                value="1 сентября 2023" placeholder="Укажите дату">
               <span class="form-message form-message-correct">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <div class="field-group field-group-half-adults">
-              <label class="form-label" for="check-in-number">Взрослые:</label>
+              <label class="form-label" for="check-in-number-adults">Взрослые:</label>
               <div class="input-buttons">
                 <button class="button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых.</span>
@@ -269,8 +269,8 @@
                   </svg>
                 </button>
 
-                <input class="field-group count-field" type="number" id="check-in-number" name="check-in-number" value="2"
-                  placeholder="Укажите количество">
+                <input class="field-group count-field" type="number" id="check-in-number-adults" name="check-in-number-adults"
+                  value="2" placeholder="Укажите количество">
                 <button class="button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество взрослых.</span>
                   <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -282,7 +282,7 @@
             </div>
 
             <div class="field-group field-group-half-child">
-              <label class="form-label" for="check-in-number">Дети:</label>
+              <label class="form-label" for="check-in-number-child">Дети:</label>
               <div class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-child">
                 </button>
@@ -302,7 +302,7 @@
                 </svg>
               </button>
 
-              <input class="field-group count-field" type="number" id="check-in-number" name="check-in-number" value="2"
+              <input class="field-group count-field" type="number" id="check-in-number-child" name="check-in-number-child" value="2"
                 placeholder="Укажите количество">
               <button class="button-plus" type="button">
                 <span class="visually-hidden">Увеличить количество детей.</span>
