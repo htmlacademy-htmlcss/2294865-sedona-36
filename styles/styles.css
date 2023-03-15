@@ -1353,10 +1353,6 @@ color: rgba(255, 255, 255, 0.1);
   margin-bottom: 4px
 }
 
-.title-margin-first {
-  margin-left: 4px;
-}
-
 .img-margin-zero {
   margin-left: 3px;
 }
@@ -1382,7 +1378,7 @@ color: rgba(255, 255, 255, 0.1);
 }
 
 .padding-item-first {
-  padding-left: 24px;
+  padding-left: 25px;
 }
 
 .padding-item-second {
