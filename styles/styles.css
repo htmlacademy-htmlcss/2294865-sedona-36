@@ -1073,12 +1073,6 @@ color: rgba(255, 255, 255, 0.1);
   gap: 8px;
 }
 
-/*.hotel-cards-show-types-item{
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
-}*/
-
 .button-image-show-type {
   display: block;
   box-sizing: border-box;
@@ -1131,6 +1125,11 @@ color: rgba(255, 255, 255, 0.1);
 .search-card-types {
   width: 1060px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .search-count {
@@ -1140,13 +1139,6 @@ color: rgba(255, 255, 255, 0.1);
   text-transform: uppercase;
   margin: 0;
   max-width: 350px;
-}
-
-.search-card-types {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
 }
 
 .select {
@@ -1198,10 +1190,6 @@ color: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
 
-.search-card-types {
-  padding-top: 50px;
-}
-
 /* Отели */
 
 .hotel-cards {
@@ -1216,6 +1204,8 @@ color: rgba(255, 255, 255, 0.1);
 .hotel-cards-img {
   width: 300px;
   padding-bottom: 16px;
+  margin-bottom: -17px;
+  margin-top: 2px;
 }
 
 .hotel-cards-item {
@@ -1242,8 +1232,10 @@ color: rgba(255, 255, 255, 0.1);
   line-height: 28px;
   color: #000000;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: -1px;
+  margin-top: 16px;
 }
+
 
 .hotel-cards-type {
   color: #333333;
@@ -1295,6 +1287,7 @@ color: rgba(255, 255, 255, 0.1);
   border: none;
   padding: 8px 17px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .hotel-cards-button:hover,
@@ -1346,14 +1339,62 @@ color: rgba(255, 255, 255, 0.1);
 
 .stars-2 {
   width:42px;
+  margin-top: 3px;
+  margin-bottom: 4px;
 }
 
 .stars-3 {
-  width:66px;
+  width: 67px;
+  margin-left: -2px
 }
 
 .stars-4 {
-  width: 80px;
+  width: 89px;
+  margin-bottom: 4px
+}
+
+.title-margin-first {
+  margin-left: 4px;
+}
+
+.img-margin-zero {
+  margin-left: 3px;
+}
+
+.img-margin-first {
+  margin-left: 2px;
+}
+
+.price-margin-first {
+  margin-right: -8px;
+}
+
+.mimic-button-margin-first {
+  margin-left: 2px;
+}
+
+.title-margin-second {
+  margin-left: -2px;
+}
+
+.padding-item {
+  padding-left: 30px;
+}
+
+.padding-item-first {
+  padding-left: 24px;
+}
+
+.padding-item-second {
+  padding-left: 22px;
+}
+
+.padding-item-third {
+  padding-left: 22px;
+}
+
+.img-margin-third {
+  margin-left: 11px;
 }
 
 /*Pagination */
