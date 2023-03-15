@@ -1485,10 +1485,15 @@ color: rgba(255, 255, 255, 0.1);
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-content {
+  width: 577px;
+  height: 448px;
+}
+
 .modal-search {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding: 74px 72px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
@@ -1500,7 +1505,7 @@ color: rgba(255, 255, 255, 0.1);
 .modal-close-button {
   position: absolute;
   padding: 20px;
-  top: 64px;
+  top: 65px;
   right: 52px;
   width: 52px;
   height: 52px;
@@ -1527,12 +1532,13 @@ color: rgba(255, 255, 255, 0.1);
 
 .modal-title {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: -8px;
 }
 
 /*.close {
@@ -1564,12 +1570,13 @@ color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background-image: url("../images/calendar-modal.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 24px center;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
   box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
 }
 
 .field-group {
@@ -1679,6 +1686,7 @@ color: rgba(255, 255, 255, 0.1);
   border: none;
   box-sizing: border-box;
   -moz-appearance: textfield;
+  font-family: "PT Sans", sans-serif;
 }
 
 .modal-button {
@@ -1696,6 +1704,7 @@ color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 22px;
 }
 
 
@@ -1760,14 +1769,15 @@ color: rgba(255, 255, 255, 0.1);
 }
 
 .field-group-half-child {
-  margin-right: 46px;
+  margin-right: 38px;
 }
 
 .tooltip {
   position: absolute;
-  margin-left: 42px;
+  margin-left: 47px;
   width: 256px;
   min-height: 152px;
+  margin-top: 9px;
 }
 
 .tooltip-toggle {
@@ -1776,7 +1786,7 @@ color: rgba(255, 255, 255, 0.1);
   height: 26px;
   border-radius: 50%;
   background-color: #83b3d3;
-  margin-left: 13px;
+  margin-left: 11px;
   display: flex;
   background-image: url("../images/i-icon.svg");
   background-repeat: no-repeat;
