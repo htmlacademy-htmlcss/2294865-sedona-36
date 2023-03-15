@@ -245,21 +245,21 @@
           <form class="arrival-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="field-group">
-              <label class="form-label" id="check-in-date" for="check-in-date">Дата Заезда:</label>
-              <input class="form-field calendar-field" type="text" name="check-in-date" value="27 апреля 2020"
+              <label class="form-label" for="check-in-date">Дата Заезда:</label>
+              <input class="form-field calendar-field" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020"
                 placeholder="Укажите дату">
               <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
             </div>
 
             <div class="field-group">
-              <label class="form-label" id="check-in-date" for="check-in-date">Дата Выезда:</label>
-              <input class="form-field calendar-field" type="text" name="check-in-date" value="1 сентября 2023"
+              <label class="form-label" for="check-in-date">Дата Выезда:</label>
+              <input class="form-field calendar-field" id="check-in-date" type="text" name="check-in-date" value="1 сентября 2023"
                 placeholder="Укажите дату">
               <span class="form-message form-message-correct">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <div class="field-group field-group-half-adults">
-              <label class="form-label" id="adults-add" for="adults-add">Взрослые:</label>
+              <label class="form-label" for="check-in-number">Взрослые:</label>
               <div class="input-buttons">
                 <button class="button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых.</span>
@@ -269,7 +269,7 @@
                   </svg>
                 </button>
 
-                <input class="field-group count-field" type="number" name="check-in-number" value="2"
+                <input class="field-group count-field" type="number" id="check-in-number" name="check-in-number" value="2"
                   placeholder="Укажите количество">
                 <button class="button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество взрослых.</span>
@@ -282,7 +282,7 @@
             </div>
 
             <div class="field-group field-group-half-child">
-              <label class="form-label" id="child-add" for="child-add">Дети:</label>
+              <label class="form-label" for="check-in-number">Дети:</label>
               <div class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-child">
                 </button>
@@ -302,7 +302,7 @@
                 </svg>
               </button>
 
-              <input class="field-group count-field" type="number" name="check-in-number" value="2"
+              <input class="field-group count-field" type="number" id="check-in-number" name="check-in-number" value="2"
                 placeholder="Укажите количество">
               <button class="button-plus" type="button">
                 <span class="visually-hidden">Увеличить количество детей.</span>
