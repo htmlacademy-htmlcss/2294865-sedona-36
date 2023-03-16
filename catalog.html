@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <title>Каталог</title>
   </head>
@@ -77,22 +77,23 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Бассейн." checked>
+                  <label class="control" for="pool-add">
+                    <input class="visually-hidden control-input" id="pool-add" type="checkbox" name="Бассейн." checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Парковка." checked>
+                  <label class="control" for="parking-add">
+                    <input class="visually-hidden control-input" id="parking-add" type="checkbox" name="Парковка."
+                      checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi.">
+                  <label class="control" for="Wi-Fi-add">
+                    <input class="visually-hidden control-input" id="Wi-Fi-add" type="checkbox" name="Wi-Fi.">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
@@ -104,24 +105,25 @@
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class=" visually-hidden control-input" type="radio" name="hotels-types-group" value="Hotel"
-                      checked>
+                  <label class="control" for="hostel-add">
+                    <input class=" visually-hidden control-input" id="hostel-add" type="radio" name="hotels-types-group"
+                      value="Hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotels-types-group" value="Motel">
+                  <label class="control" for="motel-add">
+                    <input class="visually-hidden control-input" id="motel-add" type="radio" name="hotels-types-group"
+                      value="Motel">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotels-types-group"
-                      value="Apartments">
+                  <label class="control" for="apartment-add">
+                    <input class="visually-hidden control-input" id="apartment-add" type="radio"
+                      name="hotels-types-group" value="Apartments">
                     <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -342,8 +344,8 @@
           </section>
 
           <section class="page-footer-logo">
-            <h2 class="visually-hidden">Сайт разработчика.</h2>
             <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
+              <span class="visually-hidden">Сайт разработчика.</span>
               <svg class="social-svg-icon-academy" width="115" height="34" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
